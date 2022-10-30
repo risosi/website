@@ -151,13 +151,22 @@ a{
     width: 50%;
 }
 .who-we-are{
-    padding: 10%;
+    padding: 10% 0;
 }
 .who-we-are .flex{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 6%;
+    background-image: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.who-we-are .who-we-are-2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url('../images/bg1.jpg');
+    padding-bottom: 15px;
 }
 .who-we-are .flex img{
     width: 80%;
