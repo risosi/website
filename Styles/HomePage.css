@@ -143,7 +143,7 @@ a{
     width: 80%;
 }
 .color-pentanik{
-    color: var(--pen-color);
+    color: var(--pen-color)!important;
 }
 .main-header .header *{
     margin-top: 5%;
@@ -233,9 +233,8 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 35%;
-    min-height: 50%;
-    height: auto;
+    width: 40%;
+    height: 600px;
     padding: 2% 0;
     margin: 1.5%;
     border: 1px solid lightgray;
@@ -271,5 +270,115 @@ a{
 .card-group .card a:hover{
     color: #1B75BB;
     background-color: #fff;
-    
+}
+
+.have-poj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 8%;
+    margin-top: 10%;
+    background-image: url('../images/bg2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.have-poj a{
+    color: #1B75BB;
+    font-size: 2rem;
+    padding: 10px 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(14px);
+}
+.sec-services .why{
+    width: 100%;
+    margin:8% auto ;
+    text-align: center;
+}
+.card-group-2{
+    flex-direction: column;
+    width: 40%;
+}
+.card-group-2 .card{
+    height: 300px;
+    padding: 10px 15px;
+    margin: 5% 0;
+    width: 80%;
+}
+.card-groups{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.card-group-2 .card a{
+    border: none;
+    font-size: 2rem;
+    background-color: transparent;
+    text-align: center;
+    color: #1B75BB;
+}
+.card-group-2 .card a:hover{
+    color: #1B75BB;
+    background-color: transparent;
+}
+.card-group-2 .card p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.card-group-2 .card ion-icon{
+    font-size: 3rem;
+}
+.team-faq h1{
+    margin: 8% auto;
+    width: 100%;
+    text-align: center;
+}
+.team-faq .team .fx-d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-faq .team .member img{
+    width: 80%;
+}
+.team-faq .team .member{
+    width: 30%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.team-faq .faq{
+    padding: 8%;
+    margin-top: 8%;
+    background-image: url('../images/faq.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.team-faq .faq .question *{
+    text-align: left;
+    color: #fff;
+}
+.team-faq .faq .question p{
+    padding: 10px 0;
+    line-height: calc(height);
+}
+footer{
+    margin-top: 10%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: gray;
 }
