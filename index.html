@@ -50,12 +50,12 @@
                         <p>We provide one-stop solution for website design, Web development, UI/UX design, mobile applications, Graphic design and Digital Marketing. With experienced developers and designers, we are a powerful team who can build solutions that will not only drive traffics to your website but will increase conversion and sales.</p>
                         <a href="#" class="explor-button">Learn more</a>
                     </div>
-                    <div class="half-width">
+                    <div id="move_left" class="half-width">
                         <img src="images/slider-img.png" alt="what we do? example image">
                     </div>
                 </div>
                 <div class="who-we-are-2 flex">
-                    <div class="half-width">
+                    <div id="move_right" class="half-width">
                         <img src="images/section_06.png" alt="">
                     </div>
                     <div class="half-width">
@@ -66,13 +66,69 @@
                 </div>
             </div>
         </section>
+        <section class="services">
+            <div class="heading">
+                <h1>our <span class="color-pentanik">Services</span></h1>
+                <p>Any kinds of technology service can be provided by the experienced team of Pentanik IT.</p>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <h2>Web Design</h2>
+                    <p>We offer professional web design services at affordable rates to help your business attract more visitors and keep them on your site!</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="card">
+                    <h2>Web Development</h2>
+                    <p>Our excellent web development experiences help to provide world-class quality with eye-catching web page design and development.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="card">
+                    <h2>WordPress Design</h2>
+                    <p>With our focus on WordPress development, you can rest assured that our team is well-versed in the best practices and newest features.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <h2>UI/UX</h2>
+                    <p>User Interface (UI) and User Experience (UX) design is a most important part of website. It defines, how users interacts</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="card">
+                    <h2>Graphic Design</h2>
+                    <p>Whether you're looking for a new logo or some flyers, the talented global community of designers at we can make it happen.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="card">
+                    <h2>Digital Marketing</h2>
+                    <p>Any kinds of Digital Marketing works such as SEO, SEM, SMM, Email Marketing, SMS Marketing, Facebook Marketing and so on.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </section>
     </main>
     
     
     
     
     
-    
+    <script>
+        //fency animation
+        
+        let left_div = document.getElementById('move_left');
+        let right_div = document.getElementById('move_right');
+        function $anim_move_left_right(e){
+            left_div.classList.forEach((item)=>{
+            if (item!=='active'){
+                setTimeout(()=>{
+                left_div.classList.add('active');
+                right_div.classList.add('active');
+                },1000)
+            }
+            });
+        }
+        window.addEventListener('scroll',$anim_move_left_right)
+    </script>
     
 </body>
 </html>

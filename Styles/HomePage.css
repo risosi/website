@@ -170,6 +170,7 @@ a{
 }
 .who-we-are .flex img{
     width: 80%;
+    transition: 0.8s;
 }
 .greeting .welcome h1{
     text-align: center;
@@ -180,4 +181,45 @@ a{
 }
 .who-we-are .who-we-are-1 *{
     text-align: right;
+}
+.greeting #move_left{
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 1s;
+}
+.greeting #move_left.active{
+    transform: translateX(-100px);
+    opacity: 1;
+}
+.greeting #move_right{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 1s;
+}
+.greeting #move_right.active{
+    transform: translateX(100px);
+    opacity: 1;
+}
+
+
+
+
+.services .heading{
+    text-align: center;
+    margin: 5% auto;
+    width: 85%;
+}
+.services .heading *{
+    margin: 20px 0;
+}
+
+.services .card-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
