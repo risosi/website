@@ -16,16 +16,17 @@ body{
     color: #fff;
 }
 h1{
-    font-size: 50px;
+    font-size: 3.5rem;
 }
 h2{
-    font-size: 40px;
+    font-size: 2.7rem;
 }
 p{
     font-size: 1.5rem;
 }
 a{
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .main-header{
     position: relative;
@@ -152,6 +153,7 @@ a{
 }
 .who-we-are{
     padding: 10% 0;
+    overflow: hidden;
 }
 .who-we-are .flex{
     display: flex;
@@ -172,7 +174,7 @@ a{
     width: 80%;
     transition: 0.8s;
 }
-.greeting .welcome h1{
+.greeting .welcome >h1{
     text-align: center;
     margin-top: 10%;
 }
@@ -202,24 +204,72 @@ a{
 }
 
 
-
-
-.services .heading{
-    text-align: center;
-    margin: 5% auto;
-    width: 85%;
-}
-.services .heading *{
-    margin: 20px 0;
-}
-
-.services .card-group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
+.sec-services{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 5%;
+}
+
+.sec-services .heading-1{
+    text-align: center;
+    margin: 5% auto;
+    width: 85%;
+}
+.sec-services .heading-1 *{
+    margin: 20px 0;
+}
+
+.sec-services .card-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+}
+.card-group .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    min-height: 50%;
+    height: auto;
+    padding: 2% 0;
+    margin: 1.5%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(14px);
+}
+.card-group .card .heading{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 1%;
+    text-align: center;
+}
+.card-group .card .card-text{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+.card-group .card a{
+    color: #fff;
+    border: 2px solid gray;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 8px 10px;
+    display: inline-block;
+    margin-top: 5%;
+    transition: 1s;
+}
+.card-group .card a:hover{
+    color: #1B75BB;
+    background-color: #fff;
+    
 }
