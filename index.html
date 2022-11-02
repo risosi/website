@@ -10,10 +10,11 @@
 <body>
     <header class="main-header">
         <nav class="navigation">
+            <a class="nav-brand" href="#"><img src="images/pentanik-logo.png" alt="pentanik logo"></a>
+            <ion-icon class="three-menu" name="menu-outline"></ion-icon>
             <ul class="nav-links">
-                <li><a class="nav-brand" href="#"><img src="images/pentanik-logo.png" alt="pentanik logo"></a></li>
                 <li class="nav-link"><a href="#">Home</a></li>
-                <li class="nav-link"><a href="#">About Us</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
                 <li class="nav-link"><a href="#">Services</a></li>
                 <li class="nav-link"><a href="#">Contact</a></li>
                 <li class="nav-link dropdown-link"><a href="#">More</a>
@@ -33,7 +34,7 @@
             </ul>
         </nav>
         <div class="container header">
-            <h1><span class="color-pentanik">DESIGN</span> -<br> DEVELOPMENT <br> - MARKETING</h1>
+            <h1 class="wanted_header"><span class="color-pentanik">DESIGN</span><br> DEVELOPMENT<br>MARKETING</h1>
             <p>Pentanik IT is ready to meet your web design, web development, e-commerce website, graphic design, logo design, branding, digital marketing, search engine optimization and any digital needs related to web and marketing.</p>
             <a href="#" class="heading-button">What we do?</a>
         </div>
@@ -214,7 +215,7 @@
 
             </div>
             <div class="faq">
-                <div class="half-width"></div>
+                <div class="half-width half-width-1"></div>
                 <div class="half-width question">
                     <h1 class="color-pentanik">FAQ</h1>
                     <p><ion-icon name="arrow-forward-circle-sharp"></ion-icon><a href="#">Do you offer after-sales support?</a></p>
@@ -247,7 +248,17 @@
             }
             });
         }
-        window.addEventListener('scroll',$anim_move_left_right)
+        window.addEventListener('scroll',$anim_move_left_right);
+        
+        
+        
+        
+        
+        
+        //this plugin is for developer
+        
+        
+          //let style = "padding:5%;font-size:2em; position:fixed;top:90%;z-index:10000000;"; let div = document.createElement('div'); div.innerHTML='<button style="'+style+'left:40%;" id="increase_layout" >+</button><button style="'+style+'left:60%;" id="decrease_layout">-</button>'; document.body.appendChild(div); let $viewport=document.querySelector('meta[name="viewport"]'); let i=1.0; const $decrease_layout=()=>{$viewport.setAttribute('content','width=device-width, initial-scale='+String(i));i=i-0.1; }; const $increase_layout=()=>{$viewport.setAttribute('content','width=device-width, initial-scale='+String(i));i=i+0.1;}; document.getElementById('decrease_layout').addEventListener('click',$decrease_layout);document.getElementById('increase_layout').addEventListener('click',$increase_layout);
     </script>
     
 </body>

@@ -16,10 +16,10 @@ body{
     color: #fff;
 }
 h1{
-    font-size: 3.5rem;
+    font-size: 3.3rem;
 }
 h2{
-    font-size: 2.7rem;
+    font-size: 2.5rem;
 }
 p{
     font-size: 1.5rem;
@@ -30,12 +30,12 @@ a{
 }
 .main-header{
     position: relative;
-    background:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0.4)),url('../images/header_bg.jpg');
+    background:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0.8)),url('../images/header_bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    max-height: 800px;
+    max-height: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +76,9 @@ a{
     display: none;
     width: 150px;
     background: #1B75BB;
+}
+.three-menu{
+    display: none;
 }
 .navigation .dropdown li{
     padding: 0;
@@ -141,6 +144,10 @@ a{
 }
 .main-header .header{
     width: 80%;
+    margin-top: 3%;
+}
+.main-header .header .wanted_header{
+    text-align: center;
 }
 .color-pentanik{
     color: var(--pen-color)!important;
@@ -168,10 +175,9 @@ a{
 }
 .who-we-are .who-we-are-2{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url('../images/bg1.jpg');
-    padding-bottom: 15px;
 }
 .who-we-are .flex img{
-    width: 80%;
+    width: 95%;
     transition: 0.8s;
 }
 .greeting .welcome >h1{
@@ -184,13 +190,17 @@ a{
 .who-we-are .who-we-are-1 *{
     text-align: right;
 }
+.who-we-are .half-width{
+    padding: 5%;
+}
+
 .greeting #move_left{
     transform: translateX(100px);
     opacity: 0;
     transition: 1s;
 }
 .greeting #move_left.active{
-    transform: translateX(-100px);
+    transform: translateX(0);
     opacity: 1;
 }
 .greeting #move_right{
@@ -199,7 +209,7 @@ a{
     transition: 1s;
 }
 .greeting #move_right.active{
-    transform: translateX(100px);
+    transform: translateX(0);
     opacity: 1;
 }
 
@@ -243,6 +253,7 @@ a{
     border-bottom-color: #fff;
     background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(14px);
+    box-shadow: 5px 5px 50px 10px rgba(0,0,0,0.5) ;
 }
 .card-group .card .heading{
     font-size: 2.5rem;
@@ -276,7 +287,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 8%;
+    padding: 2% 0;
     margin-top: 10%;
     background-image: url('../images/bg2.png');
     background-repeat: no-repeat;
@@ -381,4 +392,144 @@ footer{
     padding: 10px;
     width: 100%;
     background-color: gray;
+}
+
+/* media query for mobiles */
+
+/* query for lg */
+
+@media screen and (max-width:922px){
+    .three-menu{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        font-size: 2rem;
+    }
+    .main-header .header .heading-button{
+        width: 40%;
+        font-size: 1rem;
+    }
+    .navigation .nav-links{
+        display: none;
+        transition: 0.5s;
+    }
+    .navigation{
+        padding: 0;
+        transition: 0.5s;
+    }
+    .three-menu:hover ~ .nav-links,.nav-links:hover{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 800%;
+        background-color: rgba(0,0,0,0.9);
+    }
+    .navigation:hover{
+        background-color: rgba(0,0,0,0.9);
+    }
+    footer{
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:768px){
+    h1{
+        font-size: 2.7rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    a{
+        font-size: 1.2rem;
+    }
+    .card-group{
+        flex-direction: column;
+    }
+    .card-group .card{
+        width: 80%;
+        padding: 2.5%;
+        height:500px;
+        margin-top: 7%;
+    }
+    
+}
+@media screen and (max-width:576px){
+    h1{
+        font-size: 2.3rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+    .main-header{
+        padding: 5%;
+        height: 100vh;
+    }
+    
+    .card-group{
+        flex-direction: column;
+    }
+    .card-group .card{
+        width: 80%;
+        padding: 2.5%;
+        height:400px;
+        margin-top: 7%;
+    }
+    .have-poj{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .card-group .card .heading{
+        font-size: 1.8rem;
+    }
+    .card-groups{
+        flex-direction: column;
+    }
+    a.explor-button{
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+    .fx-d{
+        flex-direction: column;
+    }
+    .who-we-are .flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: 5%;
+    }
+    .team-faq .team .member{
+        width: 80%;
+        margin-bottom: 20%;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .team-faq .faq{
+        margin-top: 50%;
+        margin-bottom: 50%;
+        text-align: center;
+    }
+    .team-faq .faq .question *,.who-we-are .who-we-are-1 *{
+        text-align: center;
+    }
+    .half-width-1{
+        width: 0%;
+    }
+    footer{
+        padding: 10px 0;
+    }
 }
