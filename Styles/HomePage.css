@@ -77,6 +77,9 @@ a{
     width: 150px;
     background: #1B75BB;
 }
+.three-menu{
+    display: none;
+}
 .navigation .dropdown li{
     padding: 0;
     transition: 0.8s;
@@ -409,12 +412,35 @@ footer{
         padding: 5%;
         height: 100vh;
     }
+    .three-menu{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        font-size: 2rem;
+    }
     .main-header .header .heading-button{
         width: 40%;
         font-size: 1rem;
     }
     .navigation .nav-links{
         display: none;
+        transition: 0.5s;
+    }
+    .navigation{
+        padding: 0;
+        transition: 0.5s;
+    }
+    .three-menu:hover ~ .nav-links,.nav-links:hover{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 800%;
+        background-color: rgba(0,0,0,0.9);
+    }
+    .navigation:hover{
+        background-color: rgba(0,0,0,0.9);
     }
     .card-group{
         flex-direction: column;
@@ -473,9 +499,4 @@ footer{
     footer{
         padding: 10px 0;
     }
-    .greeting #move_left.active{
-        transform: translateX(0);
-    }
 }
-
-
